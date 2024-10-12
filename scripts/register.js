@@ -1,35 +1,31 @@
-console.log("register.js");
-let pets = [];//empty array
+let pets = [];
 
-//create pets
-let pet1 = {
-    name:"Scooby",
-    age:99,
-    gender:"Male",
-    breed:"Dane",
-    service:"Grooming"
-}
-let pet2 = {
-    name:"Scrappy",
-    age:88,
-    gender:"Male",
-    breed:"Mixed",
-    service:"Grooming"
-}
-let pet3 = {
-    name:"Tweety",
-    age:59,
-    gender:"Female",
-    breed:"Canarian",
-    service:"Vaccines"
+function pet(name, age, gender, service){
+    // properties = parameters (values)
+this.name=name;
+this.age=age;
+this.gender=gender;
+this.service=service;
 }
 
-pets.push(pet1,pet2,pet3);//adding into the array
+function register (){
+    let inputName=document.getElementById("txtName").value;
+    let inputAge=document.getElementById("txtAge").value;
+    let inputGender=document.getElementById("txtGender").value;
+    let inputService=document.getElementById("txtService").value;
+}
+console.log(inputName,inputAge,inputGender,inputService);
+console.log(newPet);
+pets.push(newPet);
 
-function displayNames(){
-    //display pet names
-    for(let i=0;i<pets.length;i++){
-        document.getElementById("petNames").innerHTML+=`<p> Name: ${pets[i].name}</p>`;
-    }
-    console.log(pets.length);
+
+function init(){
+console.log ("init");
+let pet1 = new pet("scooby", 99, "Male", "Grooming");
+
+
+console.log(pet1)
+pets.push(pet1)
+
+window.onload=init; 
 }

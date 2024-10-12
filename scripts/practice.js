@@ -1,11 +1,11 @@
-//obj lit
-//let student1= {
-    // name:"John Smith",
-    //age:99, 
-    //isAdmin:false,
-    //grade1:3.7
-//}
+//empty array (   HOTEL [   ]    )
+//PROPERTIES WHAT YOU WANT FROM THEM
+//REGISTER WHAT THEY DO FOR YOU 
+//CREATES THE ACCOUNT / ETC
+// INIT LET PET1 
+//PUSH THE PETS 
+//ON LOAD RENDERS ETC. TIME DISPLAY TIMES 
 
-/////console.log(student1)//
-//////////////////////////////////
-console.log("register.js")
+
+
+
